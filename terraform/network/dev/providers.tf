@@ -12,6 +12,9 @@ terraform {
   }
 }
 
+variable "cloudflare_api_token" {} # 👈 声明变量
+
 provider "cloudflare" {
-  # 变量会自动从你的 atlantis.env 中读取
+  api_token = var.cloudflare_api_token # 👈 显式关联
 }
+
