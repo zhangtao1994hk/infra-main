@@ -1,4 +1,8 @@
 terraform {
+  backend "gcs" {
+    bucket = "zhangtao-tf-state"
+    prefix = "terraform/compute/dev"  # 👈 每个目录不一样
+  }
   required_providers {
     google = {
       source  = "hashicorp/google"
