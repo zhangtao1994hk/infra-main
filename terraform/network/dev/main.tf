@@ -1,7 +1,7 @@
 resource "cloudflare_record" "test_atlantis" {
   zone_id = var.cloudflare_zone_id
   name    = "atlantis-test"
-  value   = "1.1.1.1"
+  value   = "36.161.119.39"
   type    = "A"
   proxied = true
 }
