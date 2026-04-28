@@ -1,0 +1,23 @@
+# ==============================
+# Terraform 自动生成文件（必须忽略）
+# ==============================
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfstate.d/
+
+# 临时/日志文件
+*.tfplan
+*.log
+crash.log
+
+# ==============================
+# 系统/编辑器 垃圾文件
+# ==============================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
