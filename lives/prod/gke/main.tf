@@ -3,7 +3,7 @@ data "terraform_remote_state" "network" {
 
   config = {
     bucket = "zhangtao-tf-state"
-    prefix = "infra-main/lives/dev/network"
+    prefix = "infra-main/lives/prod/network"
   }
 }
 
